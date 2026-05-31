@@ -1,0 +1,127 @@
+.about {
+    padding: var(--section-pad);
+    background: var(--brown-deep);
+    color: var(--cream);
+}
+
+.about__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about .section-label {
+    color: var(--gold-light);
+}
+
+.about .section-title {
+    color: var(--cream);
+}
+
+.about__em {
+    font-style: italic;
+    color: var(--gold-light);
+}
+
+.about__text {
+    color: rgba(245, 239, 224, 0.72);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-top: 20px;
+}
+
+.about__founders {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid rgba(245, 239, 224, 0.12);
+    padding-top: 28px;
+}
+
+.about__founder {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.about__founder-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--brown-deep);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about__founder-name {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--cream);
+}
+
+.about__founder-role {
+    font-size: 12px;
+    color: rgba(245, 239, 224, 0.6);
+    margin-top: 2px;
+}
+
+.about__values {
+    display: flex;
+    align-items: center;
+}
+
+.about__values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.about__value-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    transition: background 0.2s;
+}
+
+.about__value-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+.about__value-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 8px;
+}
+
+.about__value-desc {
+    font-size: 13px;
+    color: rgba(245, 239, 224, 0.62);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .about__inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__values-grid {
+        grid-template-columns: 1fr;
+    }
+}
