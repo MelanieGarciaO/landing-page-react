@@ -13,11 +13,11 @@
     align-items: start;
 }
 
-.about .section-label {
+.about :deep(.section-label) {
     color: var(--gold-light);
 }
 
-.about .section-title {
+.about :deep(.section-title) {
     color: var(--cream);
 }
 
@@ -97,7 +97,6 @@
 .about__value-card:hover {
     background: rgba(255, 255, 255, 0.09);
 }
-
 
 .about__value-title {
     font-family: var(--font-display);
