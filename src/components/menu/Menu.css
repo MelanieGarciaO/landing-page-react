@@ -30,11 +30,13 @@
 .menu__filter {
   padding: 8px 20px;
   font-size: 13px;
+  font-weight: 400;
   border: 1.5px solid transparent;
   border-radius: 999px;
   color: var(--text-muted);
   background: var(--cream);
   transition: all 0.2s;
+  letter-spacing: 0.02em;
 }
 
 .menu__filter:hover {
