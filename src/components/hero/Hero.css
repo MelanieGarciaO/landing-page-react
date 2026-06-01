@@ -66,10 +66,6 @@
     transform: none;
 }
 
-.hero__label {
-    transition-delay: 0.1s;
-}
-
 .hero__title {
     font-family: var(--font-display);
     font-size: clamp(2.8rem, 6vw, 4.2rem);
